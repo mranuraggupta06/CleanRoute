@@ -1,7 +1,4 @@
 # 🌿 CleanRoute — Smart Waste Route Optimizer & Citizen Portal
-
-> Rebuilt from the ground up as a production-grade full-stack web application: **React (Vite) Frontend** + **Java (Spring Boot) Backend**, designed for **100% free deployment** on **Vercel** and **Render.com**.
-
 ---
 
 ## 🎯 What is CleanRoute?
@@ -13,7 +10,7 @@ Municipal garbage collection typically wastes thousands of litres of fuel drivin
 
 ---
 
-## 🧠 The 4 Optimization Algorithms (Explained in Plain English)
+## 🧠 The 4 Optimization Algorithms
 
 The problem being solved is the **Capacitated Vehicle Routing Problem (CVRP)**: serving multiple waste spots starting and ending at a central depot without exceeding each truck's weight limit.
 
@@ -84,26 +81,6 @@ Instead of confusing academic names, CleanRoute presents them in intuitive terms
 - **Deployment:**
   - Frontend: **Vercel** (Free tier, SPA routing via `vercel.json`)
   - Backend: **Render.com** (Free tier, Multi-stage `Dockerfile` and `render.yaml`)
-
----
-
-## 🚀 Quick Start (Local Run)
-
-1. **Start Backend (Port 8080):**
-   ```bash
-   run-backend.bat
-   ```
-2. **Start Frontend (Port 5173):**
-   ```bash
-   run-frontend.bat
-   ```
-3. Open `http://localhost:5173` in your browser.
-
----
-
-## ☁️ Free Cloud Deployment
-
-Refer to [DEPLOYMENT.md](file:///C:/Users/User%203/.gemini/antigravity/scratch/cleanroute/DEPLOYMENT.md) for step-by-step instructions on deploying the frontend to **Vercel** and the backend to **Render.com** at zero cost.
 
 ---
 
