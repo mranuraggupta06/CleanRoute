@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cleanroute-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: FRONTEND_URL
+        value: https://your-cleanroute.vercel.app
