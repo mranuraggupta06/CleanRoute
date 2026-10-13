@@ -1,14 +1,16 @@
 @echo off
-setlocal
+setlocal enabledelayedexpansion
+title CleanRoute - Frontend (React + Vite)
 echo ========================================================
-echo  Starting CleanRoute React Frontend (Port 5173)
+echo   Starting CleanRoute React Frontend
+echo   URL:  http://localhost:5173
 echo ========================================================
 
 cd /d "%~dp0frontend"
 
-if exist "..\tools\node-v20.18.0-win-x64\npm.cmd" (
+if exist "%~dp0tools\node-v20.18.0-win-x64\node.exe" (
     set "PATH=%~dp0tools\node-v20.18.0-win-x64;%PATH%"
 )
 
-npm run dev
+call npm run dev
 pause
